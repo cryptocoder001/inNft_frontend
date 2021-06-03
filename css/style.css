@@ -1,0 +1,572 @@
+html {
+  height: 100%;
+}
+
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center;
+   min-height: 100%;
+   background: linear-gradient(to right, #000000, #c469de);
+}
+
+section {
+  padding-bottom: 20%;
+}
+
+/* TOP SECTION */
+
+.NFThubLogo {
+  filter: drop-shadow(4px 4px 7px #1b1c25);
+}
+
+.introText {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #a0a0a0;
+  padding-bottom: 35px;
+}
+
+.btn {
+  background-color: #f80040;
+  color: #ffffff;
+  max-margin: 1px;
+  max-padding: 5px 40px;
+  font-size: 2rem;
+  line-height: auto;
+  box-shadow: 7px 10px 3px darkred;
+}
+
+.subText {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-top: 35px;
+  text-shadow: 4px 4px 6px #a0a0a0;
+}
+
+#imgTitle {
+  position: absolute;
+  top: 30px;
+  right: -0;
+  min-width: 40%;
+  filter: blur(0.7px);
+  animation: shimmy 1.7s infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes shimmy {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+/* MEDIA QUERY FOR TOP SECTION ----- MOBILE VERSION*/
+@media screen and (max-width: 1028px) {
+  #imgTitle{
+    position: relative;
+    top: auto;
+    right: 0;
+    left: 0;
+    min-width: 40%;
+    display: none;
+  }
+
+
+  .introText {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 11px;
+    padding-bottom: 35px;
+  }
+
+
+  .subText {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-top: 35px;
+  }
+
+
+  .btn {
+    background-color: #f80040;
+    color: #ffffff;
+    max-margin: 1px;
+    max-padding: 5px 40px;
+    font-size: 1rem;
+    line-height: auto;
+    box-shadow: 3px 4px 3 px darkred;
+  }
+}
+
+
+/* DISCOVER SECTION*/
+
+#DiscoverSection {
+  position: relative;
+}
+
+
+
+
+#discoverContainer {
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+
+.discoverSectionImages {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -160px;
+  bottom: 0;
+  margin: 0;
+}
+
+
+.discoverImages {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 40px 20px 20px 20px;
+  filter: drop-shadow(7px 7px 8px #1b1c25);
+  border-radius: 8%;
+}
+
+
+/*Media Query for DISCOVER SECTION - MOBEIL VERSION*/
+
+@media screen and (max-width: 1028px) {
+  .discoverSectionImages {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40px;
+    bottom: 0;
+    margin: 0; 
+  }
+
+
+  .discoverImages {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 40px 20px 20px 20px;
+    filter: drop-shadow(7px 7px 8px #1b1c25);
+    border-radius: 8%;
+  }
+
+
+  #discoverContainer {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+
+/* Buy, Sell and Collect SECTION */
+
+
+#collectSection {
+  position: relative;
+}
+
+
+.collectHeaderText {
+  font-size: 3.5rem;
+  font-weight: 500;
+  filter: drop-shadow(5px 5px 3px #a0a0a0);
+  text-align: left;
+  max-width: 50%;
+  padding-left: 100px;
+  letter-spacing: 6px;
+}
+
+
+.dividerIcon1 {
+   border-top: 8px solid #da3847;
+   border-radius: 3px;
+   width: 40%; 
+   margin-left: 0;
+}
+
+
+.collectText {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: left;
+  max-width: 52%;
+  padding-top: 20px;
+  padding-left: 100px;
+  letter-spacing: 2px;
+  padding-bottom: 16%;
+}
+
+
+.collectionSectionImages {
+  width: 100%;
+  position: absolute;
+  float: left;
+  left: 0;
+  right: 0;
+  top: -160px;
+  margin: 0;
+}
+
+
+/*Media Query for BUY, SELL and COLLECT - MOBEIL VERSION*/
+
+@media screen and (max-width: 1028px) {
+
+  .collectHeaderText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  filter: drop-shadow(5px 5px 3px #a0a0a0);
+  text-align: left;
+  max-width: 50%;
+  padding-left: 20px;
+  letter-spacing: 6px;
+}
+
+
+.collectText {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  max-width: 70%;
+  padding-top: 5px;
+  padding-left: 30px;
+  letter-spacing: 2px;
+}
+
+
+.collectionSectionImages {
+  width: 100%;
+  opacity: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+
+
+}
+
+
+
+/* THE FIRST IN DENMARK SECTION */
+
+
+#theFirstNFTSection {
+  position: relative;
+  padding-bottom: 15%;
+}
+
+
+
+.theFirstNFTHeaderText {
+  font-size: 3.5rem;
+  font-weight: 500;
+  filter: drop-shadow(5px 5px 3px #a0a0a0);
+  text-align: center;
+  padding-left: 200px;
+  max-width: 100%;
+  letter-spacing: 6px;
+}
+
+
+  .dividerIcon {
+   border-top: 8px solid #da3847;
+   border-radius: 3px;
+   width: 75%; 
+   margin-right: 0;
+   padding-bottom: 5%;
+}
+
+
+#theFirstNFTContainer {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+
+.featureImages {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 20px #a0a0a0);
+  animation: featureImages 1s infinite;
+  animation-direction: alternate;
+}
+
+
+  @keyframes featureImages {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+.subTextNFT {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-shadow: 4px 4px 6px #a0a0a0;
+  position: absolute;
+  width: 100%;
+}
+
+
+.featureText {
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 5%;
+  margin-left: 30px;
+}
+
+
+.circlesOnly {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:-130px;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+/* Media Query FIRST NFT SECTION */
+@media screen and (max-width: 1028px) {
+
+.theFirstNFTHeaderText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  filter: drop-shadow(5px 5px 3px #a0a0a0);
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 0;
+  max-width: 100%;
+  letter-spacing: 6px;
+}
+
+
+  .dividerIcon {
+   border-top: 8px solid #da3847;
+   border-radius: 3px;
+   width: 100%; 
+   margin-right: 0;
+}
+
+
+.featureImages {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 20px #a0a0a0);
+  animation: featureImages 1.5s infinite;
+  animation-direction: alternate;
+
+}
+
+  @keyframes featureImages {
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+
+.subTextNFT {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-shadow: 4px 4px 6px #a0a0a0;
+  position: absolute;
+  width: 100%;
+}
+
+.featureText {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-left: 0px;
+}
+
+
+.circlesOnly {
+   width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+}
+
+}
+
+
+/* STAY TUNED SECTION */
+
+#stayTuned {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.stayTunedContainer {
+  padding-bottom: 35%;
+}
+
+.ColoredBalls {
+  position: absolute;
+  z-index: 0;
+  top: 0%;
+  left:30%;
+  max-height: 40%;
+  max-width: 40%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.AnimalAbstract {
+  position: absolute;
+  z-index: 1;
+  top: 2.5%;
+  right: 25%;
+  max-height:40%;
+  max-width: 40%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.WomanAbstract {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 40%;
+  max-height: 55%;
+  max-width: 55%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+
+.stayTunedText {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #a0a0a0; 
+}
+
+.stayTunedDividerIcon {
+   border-top: 8px solid #da3847;
+   border-radius: 3px;
+   width: 65%;
+   margin-right: 14%; 
+}
+
+
+i {
+  font-size: 80px;
+  margin-left: 3%;
+}
+
+.mask:hover {
+  color: #a0a0a0;
+}
+
+
+
+/*MEDIA QUERY STAY TUNED SECION*/
+
+@media screen and (max-width: 1028px) {
+
+
+.ColoredBalls {
+  position: absolute;
+  z-index: 0;
+  top: 5%;
+  left:20%;
+  max-height: 40%;
+  max-width: 30%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.AnimalAbstract {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: 45%;
+  max-height:40%;
+  max-width: 30%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+
+
+.WomanAbstract {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 35%;
+  max-height: 45%;
+  max-width: 50%;
+  margin: 0 0 0 0;
+  filter: drop-shadow(7px 7px 10px #1b1c25);
+}
+
+.stayTunedText {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #a0a0a0;
+}
+
+i {
+  font-size: 30px;
+}
+}
+
+.x-input-name{
+  width: 100%;
+  color: black;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #f5f2eb;
+  border-radius: 5px;
+}
+
+.x-input-email{
+  width: 100%;
+  color: black;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #f5f2eb;
+  border-radius: 5px;
+}
+#closeButton{
+  background-color: "#c8542d!important";
+  color: "#f1ebe9";
+  border: none;
+  outline: none;
+  height: 40px;
+}
+#saveButton{
+  background-color: "#c8542d!important";
+  color: "#f1ebe9";
+  border: none;
+  outline: none;
+  height: 40px;
+}
